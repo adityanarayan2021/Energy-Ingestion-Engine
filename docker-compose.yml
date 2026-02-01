@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  postgres:
+    image: timescale/timescaledb:2.16.0-pg15
+    container_name: energy-ingestion-engine-postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: energy
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+volumes:
+  pgdata:
