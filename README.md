@@ -51,7 +51,7 @@ The system provides:
 ### **1. Clone repository**
 
 ```bash
-git clone https://github.com/adityanarayan2021/energy-ingestion-engine.git
+git clone https://github.com/adityanarayan2021/Energy-Ingestion-Engine.git
 cd energy-ingestion-engine
 
 DATABASE_URL=postgres://postgres:postgres@localhost:5432/energy
